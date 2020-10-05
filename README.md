@@ -2,11 +2,13 @@
 Scripts and Functions to analyze CRISPR screen data after alignment to the guide library. This analysis pipeline will normalize the data and create several plots for QC and data visualization. The analysis pipeline requires the plotting functions in the screen graphing file. There are additional graphing functions that are not called by the pipeline and can be used to make customized scatterplots and rankplots with labels.
 
 ```
-usage: crispranalysisv1.0(libSeqFile = "tkov3_index.txt", normalizationFile = "Day0Vehicle.results", nontargeting = c("luciferase", "EGFP", "LacZ"))
+usage: crispranalysisv1.0(libSeqFile = "tkov3_index.txt", normalizationFile = "Day0Vehicle.results", 
+                          nontargeting = c("luciferase", "EGFP", "LacZ"))
 
 libSeqFile  = File containing the guide library sequences and gene information.
 normalizationFile = Screen results file that all the other screen results will be compared to.
-nontargeting  = Vector containing the gene symbols for any non-targeting control sgRNA's contained in the library. If there are none, then input NULL.
+nontargeting  = Vector containing the gene symbols for any non-targeting control sgRNA's contained 
+                in the library. If there are none, then input NULL.
 ```
 The input libSeqFile must be a 2 column tab-delimited file formatted as sgRNA UID then sgRNA sequence:
 ```
