@@ -6,7 +6,7 @@ usage: crispranalysisv1.0(libSeqFile = "tkov3_index.txt", normalizationFile = "D
 
 libSeqFile  = File containing the guide library sequences and gene information.
 normalizationFile = Screen results file that all the other screen results will be compared to.
-nontargeting  = Vector containing the gene symbols for any non-targeting control sgRNA's.
+nontargeting  = Vector containing the gene symbols for any non-targeting control sgRNA's contained in the library. If there are none, then input NULL.
 ```
 The input libSeqFile must be a 2 column tab-delimited file formatted as sgRNA UID then sgRNA sequence:
 ```
